@@ -34,3 +34,6 @@ vim.cmd.colorscheme "catppuccin"
 
 -- line numbers
 vim.opt.number = true
+
+-- Automatically run :Alpha on startucp
+vim.cmd [[ autocmd VimEnter * silent! Alpha ]]
