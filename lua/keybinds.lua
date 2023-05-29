@@ -2,7 +2,8 @@ local wk = require("which-key")
 
 wk.setup()
 
-wk.register({
+-- wk.register({
+local keybindings = {
 	-- Save file
 	["<c-s>"] = { "<cmd>w<cr>", "Save File" },
 
@@ -114,4 +115,8 @@ wk.register({
 	    ["?"] = { "<cmd>Telescope builtin<cr>", "Find Builtins" },
         },
     },
-})
+}
+
+wk.register(keybindings)
+
+return keybindings
