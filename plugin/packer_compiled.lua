@@ -189,6 +189,11 @@ _G.packer_plugins = {
     path = "/Users/teijevisser/.local/share/nvim/site/pack/packer/start/prettier.nvim",
     url = "https://github.com/MunifTanjim/prettier.nvim"
   },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/Users/teijevisser/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
   ["which-key.nvim"] = {
     loaded = true,
     path = "/Users/teijevisser/.local/share/nvim/site/pack/packer/start/which-key.nvim",

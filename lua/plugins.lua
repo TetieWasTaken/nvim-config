@@ -17,6 +17,8 @@ return require('packer').startup(function(use)
 
   use 'folke/which-key.nvim'
 
+  use { 'nvim-telescope/telescope.nvim', requires = { {'nvim-lua/plenary.nvim'} } }
+
   use 'goolord/alpha-nvim'
 
   use { "catppuccin/nvim", as = "catppuccin" }
