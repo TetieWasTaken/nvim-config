@@ -21,6 +21,9 @@ return require('packer').startup(function(use)
 
   use 'goolord/alpha-nvim'
 
+  -- auto pairs
+  use 'windwp/nvim-autopairs'
+
   use { "catppuccin/nvim", as = "catppuccin" }
 
   -- treesitter - syntax highlighting
