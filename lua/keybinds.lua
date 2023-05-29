@@ -3,6 +3,9 @@ local wk = require("which-key")
 wk.setup()
 
 wk.register({
+	-- Save file
+	["<c-s>"] = { "<cmd>w<cr>", "Save File" },
+
 	-- Increment/Decrement
 	["<c-a>"] = { "<c-a>", "Increment" },
 	["<c-x>"] = { "<c-x>", "Decrement" },
