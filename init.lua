@@ -1,0 +1,8 @@
+require('plugins')
+require('keybinds')
+require('lsp')
+require('null-ls')
+require('prettier')
+require('startup')
+require('settings')
+require('treesitter')
