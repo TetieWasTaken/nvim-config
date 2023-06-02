@@ -38,8 +38,14 @@ vim.cmd.colorscheme "catppuccin"
 -- line numbers
 vim.opt.number = true
 
--- Automatically run :Alpha on startucp
-vim.cmd [[ autocmd VimEnter * silent! Alpha ]]
+-- Automatically run :Alpha on startup, except for when nvim was started with a file name, or with -
+vim.cmd [[
+  if !(&buftype is# 'terminal' || &buftype is# 'prompt')
+    if argc() == 0 && isdirectory(expand('%'))
+      autocmd VimEnter * :silent! Alpha
+    endif
+  endif
+]]
 
 -- auto close brackets
 require("nvim-autopairs").setup()
